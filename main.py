@@ -33,7 +33,7 @@ def wave(graph, node_start, node_goal):
     graph[node_start]["wave"], graph[node_start]["path"] = 0, [node_start, ]
 
     while True:
-        # Просмотр волный "старого фронта"
+        # Просмотр волны "старого фронта"
         for node_wave in old_front:
             # Просмотр смежных вершин
             for node_adjacent in graph[node_wave]["nodes"]:
